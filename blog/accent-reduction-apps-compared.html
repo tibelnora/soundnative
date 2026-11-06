@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://tibelnora.github.io/soundnative/blog/accent-reduction-apps-compared.html" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0a0a0f; color: #f0f0f0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0b1530 linear-gradient(180deg, #0b1530 0%, #12224a 100%); background-attachment: fixed; color: #f0f0f0; }
     nav { max-width: 720px; margin: 0 auto; padding: 20px 24px 0; font-size: 0.9rem; }
     nav a { color: #888; text-decoration: none; }
     nav a:hover { color: #ccc; }
@@ -27,27 +27,44 @@
     strong { color: #e6e6e6; }
     a { color: #7fb4ff; }
     .brand { color: #ffc857; }
-    .why { border-left: 3px solid #3a6df0; background: #12131c; padding: 10px 14px; border-radius: 4px; color: #c8c8c8; }
-    .free { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px; color: #0a0a0f; background: #4cd38a; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: 2px; text-transform: uppercase; }
+    .why { border-left: 3px solid #3a6df0; background: #17264a; padding: 10px 14px; border-radius: 4px; color: #c8c8c8; }
+    .free { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px; color: #0b1530; background: #4cd38a; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: 2px; text-transform: uppercase; }
     .table-wrap { overflow-x: auto; margin: 16px 0 8px; }
     table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 0.92rem; }
-    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #222; color: #bbb; vertical-align: top; }
-    th { color: #fff; font-weight: 600; background: #12131c; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #26365e; color: #bbb; vertical-align: top; }
+    th { color: #fff; font-weight: 600; background: #17264a; }
     td:first-child { color: #e6e6e6; font-weight: 600; }
-    th.sn, td.sn { background: #0f1a2e; }
+    th.sn, td.sn { background: #1d3260; }
     .small { font-size: 0.85rem; color: #777; }
     .badge { margin-top: 28px; }
     figure { margin: 20px auto 24px; text-align: center; }
+    .intro { display: flex; gap: 28px; align-items: flex-start; margin-top: 24px; }
+    .intro-text { flex: 1; min-width: 0; }
+    .intro-text .lead { margin-top: 0; }
+    .intro figure { flex: 0 0 230px; margin: 0; order: 2; }
+    @media (max-width: 640px) { .intro { flex-direction: column; } .intro figure { flex: none; width: 100%; margin: 4px auto 0; } }
+    @media (min-width: 641px) and (max-width: 1279px) {
+      figure.side { float: left; clear: left; width: 200px; margin: 4px 24px 12px 0; }
+      figure.side img { max-width: 100%; }
+      .why, article ul { overflow: hidden; }
+      article h2 { clear: both; }
+    }
+    @media (min-width: 1280px) {
+      .intro { display: block; }
+      .intro figure { float: left; clear: left; width: 240px; margin: -110px 0 16px -288px; }
+      figure.side { float: left; clear: left; width: 240px; margin: 4px 0 16px -288px; }
+      figure.side img { max-width: 100%; }
+    }
     figure video { width: 100%; max-width: 300px; height: auto; border-radius: 22px; background: #000; }
     figure img { width: 100%; max-width: 310px; height: auto; border-radius: 18px; }
     figcaption { font-size: 0.85rem; color: #777; margin-top: 8px; }
-    .cta { margin-top: 48px; padding: 28px 24px; border-radius: 10px; background: #12131c; border: 1px solid #2a2f45; text-align: center; }
+    .cta { margin-top: 48px; padding: 28px 24px; border-radius: 10px; background: #17264a; border: 1px solid #2f4577; text-align: center; }
     .cta h2 { margin-top: 0; }
     .cta .slogan { color: #fff; font-weight: 600; font-size: 1.05rem; margin-top: 18px; }
     .cta .badge { margin-top: 18px; }
     .badge img { height: 44px; }
-    footer { text-align: center; padding: 40px 24px; color: #555; font-size: 0.85rem; border-top: 1px solid #222; }
-    footer a { color: #555; text-decoration: underline; }
+    footer { text-align: center; padding: 40px 24px; color: #7d8bb0; font-size: 0.85rem; border-top: 1px solid #26365e; }
+    footer a { color: #7d8bb0; text-decoration: underline; }
     @media (max-width: 560px) { h1 { font-size: 1.6rem; } }
   </style>
 </head>
@@ -59,31 +76,39 @@
   <h1><span class="brand">Sound Native Accent Reduction</span> vs ELSA Speak vs BoldVoice — Which Accent App Is Best?</h1>
   <p class="meta">Updated November 2026</p>
 
-  <p class="lead">Most pronunciation apps tell you whether you got a sound right or wrong. <strong class="brand">Sound Native Accent Reduction</strong> goes further: it shows you what is happening in your mouth, why a sound is difficult, and how to produce it correctly.</p>
-  <p>Instead of relying on a single pronunciation score, Sound Native combines acoustic analysis, visual feedback, articulation training and adaptive practice to help you master American English pronunciation.</p>
-  <p class="tagline">It doesn't just train your ear. It trains your mouth, too.</p>
-
+  <div class="intro">
   <figure>
     <video src="img/sound-native-demo.mp4" poster="img/demo-poster.jpg" width="444" height="962" autoplay muted loop playsinline preload="metadata" aria-label="29-second tour of Sound Native: Vowel Analyzer, drills, American R guide, Stress Trainer, a mouth exercise and progress tracking"></video>
     <figcaption>A 30-second tour of Sound Native</figcaption>
   </figure>
+  <div class="intro-text">
+  <p class="lead">Most pronunciation apps tell you whether you got a sound right or wrong. <strong class="brand">Sound Native Accent Reduction</strong> goes further: it shows you what is happening in your mouth, why a sound is difficult, and how to produce it correctly.</p>
+  <p>Instead of relying on a single pronunciation score, Sound Native combines acoustic analysis, visual feedback, articulation training and adaptive practice to help you master American English pronunciation.</p>
+  <p class="tagline">It doesn't just train your ear. It trains your mouth, too.</p>
+  </div>
+
+  </div>
 
   <h2>What makes Sound Native different?</h2>
 
   <h3>1. See your vowels in real time <span class="free">Free</span></h3>
+  <figure class="side">
+    <img src="img/vowel-analyzer.jpg" width="620" height="1342" alt="Sound Native Vowel Analyzer: the vowel chart with the /ɪ/ target for 'bit' highlighted, tongue position labels and a How to say it tip" loading="lazy" />
+    <figcaption>The Vowel Analyzer: every English vowel on one chart, with tips for saying the selected sound.</figcaption>
+  </figure>
   <p>The Vowel Analyzer turns pronunciation into something you can see. It captures your voice in real time and plots your vowels on an F1 × F2 acoustic chart, the same kind of vowel space phoneticians and speech researchers use, next to native-speaker targets.</p>
   <ul>
     <li><strong>F1</strong> reflects vowel height, which is closely related to how open your jaw is.</li>
     <li><strong>F2</strong> reflects how far forward or back your tongue is.</li>
   </ul>
   <p>For example, if your short "i" in "ship" sounds too much like the long "ee" in "sheep", the chart shows the difference. You can watch your vowel move toward the target as you adjust your tongue and jaw.</p>
-  <figure>
-    <img src="img/vowel-analyzer.jpg" width="620" height="1342" alt="Sound Native Vowel Analyzer: the vowel chart with the /ɪ/ target for 'bit' highlighted, tongue position labels and a How to say it tip" loading="lazy" />
-    <figcaption>The Vowel Analyzer: every English vowel on one chart, with tips for saying the selected sound.</figcaption>
-  </figure>
   <p class="why"><strong>Why this matters:</strong> you don't have to guess what sounds different. The difference becomes visible, with a measurable target to aim at.</p>
 
   <h3>2. Train the muscles behind your pronunciation <span class="free">Free</span></h3>
+  <figure class="side">
+    <img src="img/mouth-exercise.jpg" width="620" height="1344" alt="Lip Spread mouth exercise for /iː/ as in 'see', with an animated lip diagram and step-by-step instructions" loading="lazy" />
+    <figcaption>Lip Spread, one of 30 guided mouth exercises.</figcaption>
+  </figure>
   <p>Pronunciation isn't only about hearing sounds correctly. It's about building the physical movements that produce them. Sound Native includes 30 guided mouth exercises with animated diagrams for the lips, tongue and jaw. Each one shows which muscles are involved and which English sounds it helps, for example:</p>
   <ul>
     <li>Lip rounding for words like "food"</li>
@@ -92,10 +117,6 @@
     <li>The quick tongue tap in the American pronunciation of "water"</li>
   </ul>
   <p>Exercises name the muscles you're working, such as the orbicularis oris (lips) and the masseter (jaw), so you understand the mechanics behind each sound.</p>
-  <figure>
-    <img src="img/mouth-exercise.jpg" width="620" height="1344" alt="Lip Spread mouth exercise for /iː/ as in 'see', with an animated lip diagram and step-by-step instructions" loading="lazy" />
-    <figcaption>Lip Spread, one of 30 guided mouth exercises.</figcaption>
-  </figure>
   <p class="why"><strong>Why this matters:</strong> your first language has shaped your speech movements over many years. Targeted physical practice builds new habits faster than repetition alone.</p>
 
   <h3>3. Develop the ear to recognize every sound <span class="free">Free</span></h3>
@@ -113,11 +134,11 @@
   <h3>6. Master the details of American English</h3>
   <p>Beyond individual sounds, Sound Native has more than 25 pronunciation drills:</p>
   <h4>Stress &amp; intonation</h4>
-  <p>See your pitch curve alongside a native speaker's, match pitch peaks to stressed syllables, and practice word-stress pairs like PREsent vs preSENT.</p>
-  <figure>
+  <figure class="side">
     <img src="img/stress-trainer.jpg" width="620" height="1344" alt="Stress Trainer comparing the learner's pitch curve with a native speaker's for 'I want to go home'" loading="lazy" />
     <figcaption>Stress Trainer: your pitch (orange) against a native speaker's (blue), with a tip on what to change.</figcaption>
   </figure>
+  <p>See your pitch curve alongside a native speaker's, match pitch peaks to stressed syllables, and practice word-stress pairs like PREsent vs preSENT.</p>
   <h4>Connected speech &amp; schwa</h4>
   <p>Learn how Americans link words, reduce unstressed syllables, flap the T in "water", and say "gonna" and "wanna".</p>
   <h4>Word endings &amp; consonant clusters</h4>
