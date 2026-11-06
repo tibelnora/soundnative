@@ -29,6 +29,14 @@
     .post-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #ffc857; }
     .post-more { display: inline-block; margin-top: 8px; color: #7fb4ff; font-weight: 600; }
     @media (max-width: 480px) { .post-card img { width: 80px; } }
+    details.faq { background: #17264a; border: 1px solid #2f4577; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+    details.faq summary { cursor: pointer; list-style: none; color: #fff; font-weight: 600; display: flex; justify-content: space-between; gap: 12px; }
+    details.faq summary::-webkit-details-marker { display: none; }
+    details.faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: #7d8bb0; flex: none; }
+    details.faq[open] summary::after { content: "−"; }
+    details.faq p { margin-top: 10px; }
+    details.faq a { color: #7fb4ff; }
+    details.faq strong { color: #e6e6e6; }
     footer { text-align: center; padding: 40px 24px; color: #7d8bb0; font-size: 0.85rem; }
     footer a { color: #7d8bb0; text-decoration: underline; }
     footer a.blog-link { color: #ffc857; font-weight: 700; letter-spacing: 1px; text-decoration: none; }
@@ -64,6 +72,7 @@
     <li>25+ pronunciation drills: Vowel &amp; Consonant Pairs, TH, American /r/, Stress, Intonation, Connected Speech, Shadowing, Schwa, Tongue Twisters, and more</li>
     <li>Guided path — 28 short lessons in a sensible order, from foundations to fluent speech</li>
     <li>Practice Any Word — look up any English word or phrase, see its sounds, hear it, and record yourself</li>
+    <li>Translations in more than 15 languages — see what a word means in your own language (Spanish, French, German, Portuguese, Chinese, Japanese, Korean, Russian, Arabic, Hindi and more), or type or speak a word in your language to find out how to pronounce it in English. Runs on-device.</li>
     <li>30 physical mouth exercises with animated diagrams</li>
     <li>Accent Diagnostic and ear-training quizzes to find your weakest sounds</li>
     <li>Smart Queue — personalized practice based on your accuracy</li>
@@ -85,6 +94,60 @@
       <span class="post-more">Read the comparison →</span>
     </div>
   </a>
+</section>
+
+<hr class="divider" />
+
+<section>
+  <h2>Frequently Asked Questions</h2>
+  <details class="faq">
+    <summary>Which voice range should I choose?</summary>
+    <p>Go to <strong>Settings → Your Voice Range</strong> and tap <strong>Detect From My Voice</strong>: read one short sentence and the app suggests a range. You can also pick one yourself: Lower (deep voice), Below Middle (typical male voice), Middle (between typical male and female), Above Middle (typical female voice) or Higher (light or child-like voice). The range sets the native-speaker targets you're compared against in the Analyzer, Challenge, Minimal Pairs and Vowel Map.</p>
+  </details>
+  <details class="faq">
+    <summary>A vowel I'm sure I said correctly keeps showing as a neighboring vowel. Why?</summary>
+    <p>Every voice resonates a little differently, so first check your voice range. If the readings are consistently off in the same direction, try the range one step up or down and see which one matches your voice best.</p>
+  </details>
+  <details class="faq">
+    <summary>The Analyzer isn't picking up my voice. What can I do?</summary>
+    <p>Practice in a quiet room and speak at a normal volume, a little closer to the phone. In <strong>Sustain</strong> mode, hold one vowel steady; in <strong>Word</strong> mode, say one word at a time with a short pause between words. If background noise is triggering readings when you aren't speaking, raise <strong>Settings → Microphone → Mic Sensitivity</strong>; if quiet speech isn't picked up, lower it.</p>
+  </details>
+  <details class="faq">
+    <summary>What's the difference between Sustain and Word mode?</summary>
+    <p>Tap the button above the vowel chart to switch. <strong>Sustain</strong> is for holding one vowel steady ("eeee") so you can watch it settle on the chart. <strong>Word</strong> is for saying a real word, like "bit" or "boot", and the app detects the vowel inside it, which is closer to how you actually speak.</p>
+  </details>
+  <details class="faq">
+    <summary>Why does the app need microphone access?</summary>
+    <p>To hear and analyze your pronunciation. All audio is processed on your iPhone and never uploaded. If you turned access off, go to <strong>iPhone Settings → Sound Native → Microphone</strong>.</p>
+  </details>
+  <details class="faq">
+    <summary>Which accent does Sound Native teach?</summary>
+    <p>American English.</p>
+  </details>
+  <details class="faq">
+    <summary>How do I get tips for my native language?</summary>
+    <p>Go to <strong>Settings → My Native Language</strong>. Tips are available for Russian, Spanish and Mandarin speakers; choose Other for general guidance.</p>
+  </details>
+  <details class="faq">
+    <summary>Can I see translations in my own language?</summary>
+    <p>Yes. Go to <strong>Settings → Translate Dictionary Words</strong> and pick your language from more than 15, including Spanish, French, German, Portuguese, Chinese, Japanese, Korean, Russian, Arabic, Hindi, Vietnamese, Turkish, Polish and Ukrainian. Your iPhone will offer to download that language pack (an English pack may be needed too). After that, <strong>Practice Any Word or Phrase</strong> shows each word's translation, and you can type or speak a word in your own language to find out how to pronounce it in English. Translation runs on your iPhone and needs iOS 18 or later. If you see "Translation unavailable", the language pack hasn't finished downloading yet: wait a moment and search again. Direct translations of single words can occasionally pick a less common meaning.</p>
+  </details>
+  <details class="faq">
+    <summary>What's free, and what's in Pro?</summary>
+    <p>Free: the Vowel Analyzer, all 30 mouth exercises, the Accent Diagnostic and listening tests, the Phoneme Chart, Challenge and Smart Queue, plus one Pro drill free every day (marked with 🎁). Pro unlocks all 25+ drills and removes ads, as a monthly, yearly or one-time purchase.</p>
+  </details>
+  <details class="faq">
+    <summary>How do I restore my Pro purchase?</summary>
+    <p>Go to <strong>Settings → Upgrade to Pro</strong> and tap <strong>Restore Purchases</strong>, signed in with the same Apple ID you bought it with.</p>
+  </details>
+  <details class="faq">
+    <summary>Are my recordings stored online?</summary>
+    <p>No. Your recordings and progress stay on your iPhone. The app sends only anonymous usage statistics. See the <a href="/soundnative/privacy">privacy policy</a>.</p>
+  </details>
+  <details class="faq">
+    <summary>How do I restart the guided lessons from the beginning?</summary>
+    <p>Go to <strong>Settings → Reset Guided Syllabus Progress</strong>. This only resets which lessons are marked done; your accuracy stats, streak and recordings are kept.</p>
+  </details>
 </section>
 
 <hr class="divider" />
