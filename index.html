@@ -18,6 +18,14 @@
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
     .divider { border: none; border-top: 1px solid #26365e; margin: 0 24px; }
+    .post-card { display: flex; gap: 20px; align-items: center; padding: 18px; border-radius: 12px; background: #17264a; border: 1px solid #2f4577; text-decoration: none; }
+    .post-card:hover { border-color: #ffc857; }
+    .post-card img { width: 110px; height: auto; border-radius: 10px; flex: none; }
+    .post-card h2 { margin: 6px 0 8px; font-size: 1.1rem; line-height: 1.35; }
+    .post-card p { font-size: 0.95rem; }
+    .post-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #ffc857; }
+    .post-more { display: inline-block; margin-top: 8px; color: #7fb4ff; font-weight: 600; }
+    @media (max-width: 480px) { .post-card img { width: 80px; } }
     footer { text-align: center; padding: 40px 24px; color: #7d8bb0; font-size: 0.85rem; }
     footer a { color: #7d8bb0; text-decoration: underline; }
     footer a.blog-link { color: #ffc857; font-weight: 700; letter-spacing: 1px; text-decoration: none; }
@@ -59,6 +67,20 @@
     <li>Save and replay your own recordings</li>
     <li>Native-language tips for Russian, Spanish, and Mandarin speakers</li>
   </ul>
+</section>
+
+<hr class="divider" />
+
+<section>
+  <a class="post-card" href="/soundnative/blog/accent-reduction-apps-compared.html">
+    <img src="blog/img/vowel-analyzer.jpg" width="620" height="1342" alt="Sound Native Vowel Analyzer screenshot" loading="lazy" />
+    <div>
+      <span class="post-label">From the blog</span>
+      <h2>Sound Native Accent Reduction vs ELSA Speak vs BoldVoice</h2>
+      <p>Most accent apps give you a score. See how a live vowel chart, 30 mouth exercises and a free toolkit compare with the best-known apps.</p>
+      <span class="post-more">Read the comparison →</span>
+    </div>
+  </a>
 </section>
 
 <hr class="divider" />
